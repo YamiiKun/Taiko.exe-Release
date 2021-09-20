@@ -1,0 +1,818 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TJADotNet</name>
+    </assembly>
+    <members>
+        <member name="T:TJADotNet.ChartInfo">
+            <summary>
+            譜面情報クラス。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Title">
+            <summary>
+            譜面のタイトル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.SubTitle">
+            <summary>
+            譜面のサブタイトル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.SubTitleMode">
+            <summary>
+            サブタイトルの表示方式。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.BPM">
+            <summary>
+            基本BPM。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Wave">
+            <summary>
+            音源ファイル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Offset">
+            <summary>
+            オフセット。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.DemoStart">
+            <summary>
+            デモ音源再生開始時間。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Genre">
+            <summary>
+            ジャンル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.SongVol">
+            <summary>
+            曲音量。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.SeVol">
+            <summary>
+            効果音量。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.ScoreMode">
+            <summary>
+            配点方式。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Side">
+            <summary>
+            表譜面・裏譜面
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.Life">
+            <summary>
+            残機。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.BgImage">
+            <summary>
+            背景画像。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.BgMovie">
+            <summary>
+            背景動画。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.ChartInfo.MovieOffset">
+            <summary>
+            背景動画のオフセット。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.ScoreModes.Gen1">
+            <summary>
+            旧作配点
+            </summary>
+        </member>
+        <member name="F:TJADotNet.ScoreModes.Gen2">
+            <summary>
+            旧筐体配点
+            </summary>
+        </member>
+        <member name="F:TJADotNet.ScoreModes.Gen3">
+            <summary>
+            新筐体配点
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Sides">
+            <summary>
+            表譜面・裏譜面
+            </summary>
+        </member>
+        <member name="T:TJADotNet.SubTitleModes">
+            <summary>
+            サブタイトルの表示方式。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Chip">
+            <summary>
+            チップのクラス。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Time">
+            <summary>
+            時間。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.ChipType">
+            <summary>
+            チップのタイプ。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.NoteType">
+            <summary>
+            音符のタイプ。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.SENote">
+            <summary>
+            音符のSE。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Branch">
+            <summary>
+            何譜面か。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Branching">
+            <summary>
+            譜面分岐中の譜面かどうか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Scroll">
+            <summary>
+            スクロール速度。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.BPM">
+            <summary>
+            BPM。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Direction">
+            <summary>
+            音符の流れてくる方向(弧度法)。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.IsNote">
+            <summary>
+            音符であるかどうか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.IsHitted">
+            <summary>
+            このチップが叩かれたか・判定枠を通ったか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.CanShow">
+            <summary>
+            このチップが見えるかどうか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.IsGoGoTime">
+            <summary>
+            このチップがゴーゴータイム中のものかどうか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.TimeLag">
+            <summary>
+            このチップが叩かれたとき、実際の時間とどのくらい差があったか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.RollCount">
+            <summary>
+            黄色連打数・ふうせん連打ノルマ。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.MeasureCount">
+            <summary>
+            小節数。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.Measure">
+            <summary>
+            Measure。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Chip.RollEnd">
+            <summary>
+            連打の終端。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Courses">
+            <summary>
+            コースの列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Easy">
+            <summary>
+            かんたん
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Normal">
+            <summary>
+            ふつう
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Hard">
+            <summary>
+            むずかしい
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Oni">
+            <summary>
+            おに
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Edit">
+            <summary>
+            エディット
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Tower">
+            <summary>
+            太鼓タワー
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Courses.Dan">
+            <summary>
+            段位認定モード
+            </summary>
+        </member>
+        <member name="M:TJADotNet.CourseConverter.GetCoursesFromNumber(System.Int32)">
+            <summary>
+            整数からその整数が意味するコース名を返します。該当しない場合、おにが戻り値になります。
+            </summary>
+            <param name="number">整数。</param>
+            <returns>コース名。</returns>
+        </member>
+        <member name="M:TJADotNet.CourseConverter.GetCoursesFromString(System.String)">
+            <summary>
+            文字列からその文字列が意味するコース名を返します。該当しない場合、おにが戻り値になります。
+            </summary>
+            <param name="str">文字列。</param>
+            <returns>コース名。</returns>
+        </member>
+        <member name="T:TJADotNet.CourseInfo">
+            <summary>
+            コース情報クラス。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.TotalNotes">
+            <summary>
+            総ノーツ数
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Course">
+            <summary>
+            コース名。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Level">
+            <summary>
+            難易度。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Balloon">
+            <summary>
+            ふうせん連打。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.ScoreInit">
+            <summary>
+            初項。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.ScoreInit_Shinuchi">
+            <summary>
+            真打配点時の初項。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.ScoreDiff">
+            <summary>
+            公差。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Style">
+            <summary>
+            譜面スタイル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Exam1">
+            <summary>
+            段位認定モードの条件1。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Exam2">
+            <summary>
+            段位認定モードの条件2。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Exam3">
+            <summary>
+            段位認定モードの条件3。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.NextSongs">
+            <summary>
+            段位認定モードの幕画面リスト。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.GaugeIncrease">
+            <summary>
+            ゲージ増加量モード。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.Total">
+            <summary>
+            総音符数当たりのゲージ量。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.CourseInfo.HiddenBranch">
+            <summary>
+            譜面分岐を分岐時まで隠す。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Styles">
+            <summary>
+            譜面スタイル。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Styles.Single">
+            <summary>
+            シングル譜面。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Styles.Double">
+            <summary>
+            ダブル譜面。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Exam">
+            <summary>
+            段位認定モードクラス。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Exam.Condition">
+            <summary>
+            条件の種類。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Exam.Scope">
+            <summary>
+            条件の範囲。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Exam.RedValue">
+            <summary>
+            赤合格の閾値。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.Exam.GoldValue">
+            <summary>
+            金合格の閾値。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Conditions">
+            <summary>
+            段位認定モードの条件の種類の列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.Gauge">
+            <summary>
+            ゲージ・
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.JudgePerfect">
+            <summary>
+            良の数。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.JudgeGood">
+            <summary>
+            可の数。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.JudgeBad">
+            <summary>
+            不可の数。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.Score">
+            <summary>
+            スコア。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.Roll">
+            <summary>
+            連打数。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.Hit">
+            <summary>
+            たたけた数。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Conditions.Combo">
+            <summary>
+            最大コンボ数。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Scopes">
+            <summary>
+            段位認定モードの条件の範囲の列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Scopes.More">
+            <summary>
+            以上
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Scopes.Less">
+            <summary>
+            未満
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Gauges">
+            <summary>
+            ゲージ増加量のモードの列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Gauges.Normal">
+            <summary>
+            普通。シミュレータによって挙動が異なる。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Gauges.Floor">
+            <summary>
+            切り捨て。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Gauges.Round">
+            <summary>
+            四捨五入。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Gauges.Ceiling">
+            <summary>
+            切り上げ。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Gauges.NotFix">
+            <summary>
+            丸め処理を行わない。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.NextSong">
+            <summary>
+            段位認定モードの幕画面クラス。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.Title">
+            <summary>
+            タイトル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.SubTitle">
+            <summary>
+            サブタイトル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.SubTitleMode">
+            <summary>
+            サブタイトルの表示方式。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.Genre">
+            <summary>
+            ジャンル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.Wave">
+            <summary>
+            音源ファイル。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.ScoreInit">
+            <summary>
+            初項。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.NextSong.ScoreDiff">
+            <summary>
+            公差。
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Format.Branches">
+            <summary>
+            譜面分岐の列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Branches.Normal">
+            <summary>
+            普通譜面
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Branches.Expert">
+            <summary>
+            玄人譜面
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Branches.Master">
+            <summary>
+            達人譜面
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Format.Chips">
+            <summary>
+            チップの列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.Note">
+            <summary>
+            音符
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.Measure">
+            <summary>
+            小節線
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.MeasureChange">
+            <summary>
+            拍子変更
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BPMChange">
+            <summary>
+            BPM変更
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.ScrollChange">
+            <summary>
+            スクロール速度変更
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.GoGoStart">
+            <summary>
+            ゴーゴータイム開始
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.GoGoEnd">
+            <summary>
+            ゴーゴータイム終了
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BarLineOff">
+            <summary>
+            小節線OFF
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BarLineOn">
+            <summary>
+            小節線ON
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.Branching">
+            <summary>
+            実際に分岐する
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BranchStart">
+            <summary>
+            譜面分岐開始
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BranchEnd">
+            <summary>
+            譜面分岐終了
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.Section">
+            <summary>
+            譜面分岐リセット
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.LevelHold">
+            <summary>
+            譜面分岐維持
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.NextSong">
+            <summary>
+            段位認定モード 曲切り替え
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.LyricChange">
+            <summary>
+            歌詞変更
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BGMStart">
+            <summary>
+            BGMの開始
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.MovieStart">
+            <summary>
+            背景動画の開始
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Chips.BGChange">
+            <summary>
+            背景画像の変更
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Format.Judge">
+            <summary>
+            音符の判定
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Format.Notes">
+            <summary>
+            音符の列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.Space">
+            <summary>
+            空白
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.Don">
+            <summary>
+            ドン
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.Ka">
+            <summary>
+            カッ
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.DON">
+            <summary>
+            ドン(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.KA">
+            <summary>
+            カッ(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.RollStart">
+            <summary>
+            連打開始
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.ROLLStart">
+            <summary>
+            連打開始(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.Balloon">
+            <summary>
+            ふうせん連打
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.RollEnd">
+            <summary>
+            連打終了
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.Notes.Kusudama">
+            <summary>
+            くすだま
+            </summary>
+        </member>
+        <member name="T:TJADotNet.Format.SENotes">
+            <summary>
+            音符の擬音列挙型。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Don">
+            <summary>
+            ドン
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Do">
+            <summary>
+            ド
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Ko">
+            <summary>
+            コ
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Katsu">
+            <summary>
+            カッ
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Ka">
+            <summary>
+            カ
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.DON">
+            <summary>
+            ドン(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.KA">
+            <summary>
+            カッ(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.RollStart">
+            <summary>
+            連打
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.ROLLStart">
+            <summary>
+            連打(大)
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Rolling">
+            <summary>
+            連打中
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.RollEnd">
+            <summary>
+            連打終了
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Balloon">
+            <summary>
+            ふうせん
+            </summary>
+        </member>
+        <member name="F:TJADotNet.Format.SENotes.Kusudama">
+            <summary>
+            くすだま
+            </summary>
+        </member>
+        <member name="M:TJADotNet.Format.SENoteGenerator.GenerateSENotes(System.Collections.Generic.List{TJADotNet.Chip})">
+            <summary>
+            Chip型Listから前後の譜面を考慮してSENotesを返します。
+            </summary>
+            <param name="chips">Chip型List</param>
+            <returns></returns>
+        </member>
+        <member name="T:TJADotNet.TJADotNet">
+            <summary>
+            .tjaフォーマットの読み込みからパースまでを担当するメインクラス。
+            </summary>
+        </member>
+        <member name="M:TJADotNet.TJADotNet.#ctor(System.String)">
+            <summary>
+            譜面をパースします。
+            </summary>
+            <param name="str">.tjaフォーマットな文字列。</param>
+        </member>
+        <member name="P:TJADotNet.TJADotNet.Chart">
+            <summary>
+            パース結果。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.TJADotNet.Total_Difficulty">
+            <summary>
+            TJADotNetで扱う難易度はいくつあるのか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.TJADotNet.Total_Branches">
+            <summary>
+            TJADotNetで扱う譜面分岐数はいくつあるのか。
+            </summary>
+        </member>
+        <member name="P:TJADotNet.TJADotNet.Version">
+            <summary>
+            TJADotNetのバージョンを返します。
+            </summary>
+        </member>
+        <member name="F:TJADotNet.TJADotNet.NewLine">
+            <summary>
+            改行。Unix環境でも常にCRLFとして扱う。
+            </summary>
+        </member>
+        <member name="M:TJADotNet.TJADotNet.GetBeforeMeasureFromList(System.Collections.Generic.IReadOnlyList{TJADotNet.Chip},System.Int32)">
+            <summary>
+            チップリストからインデックスの前にある小節を返します。
+            </summary>
+            <param name="list">チップリスト。</param>
+            <param name="index">インデックス。</param>
+            <returns>小節番号。</returns>
+        </member>
+    </members>
+</doc>

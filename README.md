@@ -1,0 +1,2 @@
+# Taiko.exe-Release
+DxLibとAmaotoとTJADotNetを使って作るニジイロ風太鼓シミュ
